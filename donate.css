@@ -39,7 +39,6 @@ p .footer{
 }
 
 .article {
-    margin: 0 40px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -83,6 +82,16 @@ p .footer{
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+
+
+
+.row {
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+
 
 body {
   height: 100vh;
@@ -237,9 +246,11 @@ body {
 	flex-wrap: wrap;
   padding: 30px 0px;
 }
+
 ul{
 	list-style: none;
 }
+
 .container{
     padding: 30px 0px;
 
@@ -299,6 +310,7 @@ ul{
 	color: #ffffff;
 	padding-left: 8px;
 }
+
 .col .social-links a{
 	display: inline-block;
 	height: 40px;
@@ -311,6 +323,7 @@ ul{
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
+
 .col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
@@ -331,6 +344,49 @@ ul{
 	padding-left: 8px;
 }
 
+.footer {
+    background-color: #00AEEF;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li h5 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    color: white;
+}
+
+.footer ul li img {
+    vertical-align: middle;
+}
+
+.footer .social-links a {
+    font-size: 20px;
+    margin-right: 15px;
+    color: white;
+    transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+    color: #00AEEF;
+}
+
 .footer-bottom {
 	padding: 20px 0px;
   border-top: 2px solid #fff;
@@ -346,4 +402,159 @@ ul{
 
 .footer-bottom .right {
     float: right;
+}
+
+.footer-bottom {
+    border-top: 1px solid white;
+    margin-top: 40px;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.footer-bottom .left, .footer-bottom .right {
+    font-size: 14px;
+}
+
+.footer .col-quick a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+#article {
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  overflow-x: hidden; /* cegah konten melebar keluar layar */
+}
+
+.article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px; /* beri jarak antar kolom */
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+
+.article .image-container,
+.article .content-container {
+  flex: 1 1 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 50%;
+}
+
+.article .image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Responsive breakpoint 992px (tablet) */
+@media (max-width: 992px) {
+  .article .image-container,
+  .article .content-container {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .article {
+    flex-direction: column;
+    padding: 0 15px;
+  }
+}
+
+/* Responsive breakpoint 768px (mobile) */
+@media (max-width: 768px) {
+  #article {
+    padding: 10px;
+  }
+
+  #article image-container img {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+  .article {
+    padding: 0;
+    gap: 10px;
+  }
+
+  .teks {
+    padding: 10px 0;
+  }
+
+  .donate-button {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}
+
+
+@media (max-width: 992px) {
+    .footer .row {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+
+    .footer .col,
+    .footer .col-6 {
+        width: 100% !important;
+        text-align: center;
+        margin: 0 auto;
+    } 
+
+    .footer h4,
+    .footer h5 {
+        text-align: center !important;
+    }
+
+    .footer .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .section {
+        padding-bottom: 60px; /* Cukup ini saja */
+    }
+
+    /* Hapus margin-top besar yang memaksa layout */
+    .footer {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 992px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-sm-6 {
+    width: 100% !important;
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 10px 0; /* opsional: beri ruang antar kolom */
+    box-sizing: border-box;
+  }
 }
