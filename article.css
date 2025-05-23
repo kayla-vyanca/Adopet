@@ -224,6 +224,7 @@ ul{
 .col ul li:not(:last-child){
 	margin-bottom: 10px;
 }
+
 .col ul li a{
 	font-size: 16px;
 	color: #ffffff;
@@ -235,6 +236,7 @@ ul{
 	color: #ffffff;
 	padding-left: 8px;
 }
+
 .col .social-links a{
 	display: inline-block;
 	height: 40px;
@@ -247,6 +249,7 @@ ul{
 	color: #ffffff;
 	transition: all 0.5s ease;
 }
+
 .col .social-links a:hover{
 	color: #24262b;
 	background-color: #ffffff;
@@ -255,6 +258,7 @@ ul{
 .col-6 ul li:not(:last-child){
 	margin-bottom: 10px;
 }
+
 .col-6 ul li a{
 	font-size: 16px;
 	color: #ffffff;
@@ -360,10 +364,11 @@ ul{
 }
 
 .article .col-4 img {
-    width: 300px; 
-    height: 225px; 
+    width: 100%;
+    height: auto; /* agar rasio tetap terjaga */
     border-radius: 10px;
 }
+
 
 .article .col-4 p a {
     color: #4d4d4d !important;
@@ -374,7 +379,6 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 80px;
 }
 
 .article .col-4 h5 {
@@ -391,8 +395,7 @@ ul{
     box-sizing: border-box;
   }
 
-  /* Responsive: untuk layar kecil (≤768px) */
-  @media (max-width: 768px) {
+  @media (max-width: 992px) {
     .row {
       flex-direction: column;
     }

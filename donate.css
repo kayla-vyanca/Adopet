@@ -47,7 +47,7 @@ p .footer{
 
 
 .donate-button {
-    background-color: #3498db;
+    background-color: #00AEEF;
     color: #fff;
     padding: 10px 25px;
     border: none;
@@ -235,13 +235,8 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-/* Styling Footer */
-.footer {
-	background-color: #16A4E0;
-  margin-top: 40px;
-}
 
-.row{
+.row-footer{
 	display: flex;
 	flex-wrap: wrap;
   padding: 30px 0px;
@@ -348,6 +343,7 @@ ul{
     background-color: #00AEEF;
     color: white;
     font-family: 'Poppins', sans-serif;
+    margin-top: 40px;
 }
 
 .footer h4 {
@@ -441,6 +437,13 @@ ul{
   margin: 20px 0;
   box-sizing: border-box;
 }
+
+.article-img {
+    width: 100%;
+    height: auto; /* agar rasio tetap terjaga */
+    border-radius: 10px;
+}
+
 
 .article .image-container,
 .article .content-container {

@@ -134,14 +134,14 @@ input[type="text"], input[type="submit"] {
 }
 
 input[type="submit"] {
-  background-color: #007bff;
+  background-color: #00AEEF;
   color: white;
   border: none;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #0056b3;
+  background-color: #16a4e0;
 }
 
 h4 {
@@ -254,7 +254,7 @@ body {
 }
 
 .question.active {
-  background-color: #16a4e0;
+  background-color: #00AEEF;
   color: #fff;
 }
 
@@ -323,7 +323,7 @@ input[type="submit"]:hover {
 /* Styling Footer */
 
 .footer {
-  background-color: #16a4e0;
+  background-color: #00AEEF;
   margin-top: 40px;
 }
 

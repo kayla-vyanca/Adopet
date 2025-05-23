@@ -182,12 +182,6 @@ body {
 }
 
 
-
-/*footer*/
-.footer {
-  background-color: #16a4e0;
-}
-
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -425,6 +419,7 @@ ul {
 
 .carousel-container {
     max-width: 1200px;
+    margin: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: justify;
@@ -443,16 +438,13 @@ ul {
 }
 
 .text-box {
-    width: 90%; 
-    max-width: 400px;
+    width: 400px;
     position: absolute;
-    top: 20%;
-    right: 5%;
+    top: 150px;
+    right: 150px;
     text-align: left;
-    color: #000;
-    z-index: 2;
-}
 
+}
 
 /* Article*/
 
@@ -481,7 +473,6 @@ ul {
     align-items: center;
     justify-content: center;
     margin-top: 40px;
-    margin-left: 80px;
 }
 
 .article .col h5 {
@@ -495,10 +486,6 @@ ul {
 .miaw h2, .miaw h5 {
     text-align: center;
     margin: 0;
-}
-
-.article {
-    margin: 40px 0;
 }
 
 .row {
@@ -684,7 +671,7 @@ ul {
 
 /* Warna background per kotak */
 .blue-bg {
-  background-color: #75A6FF;
+  background-color: #00AEEF;
 }
 
  .article-icon img {
@@ -750,23 +737,17 @@ ul {
   border-right: 2px solid black; /* Simulasi kursor */
   width: 0;                      /* Mulai dari lebar 0 */
   animation: 
-  typing 2s steps(20, end) forwards, 
-  blinkCaret 0.75s step-end infinite;
+    typing 2s steps(20, end) forwards, 
+    blinkCaret 0.75s step-end infinite;
 }
 
   .text-box h6 {
     display: none;
   }
 
-   .carousel-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .carousel-left, .carousel-right {
-        margin-top: 20px;
-        text-align: center;
-    }
+  .text-box {
+    width: 150px;
+  }
 
   .adopt-btn {
     display: inline-block;
