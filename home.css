@@ -425,7 +425,6 @@ ul {
 
 .carousel-container {
     max-width: 1200px;
-    margin: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: justify;
