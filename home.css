@@ -183,7 +183,6 @@ body {
 
 
 
-/* Styling Footer */
 /*footer*/
 .footer {
   background-color: #16a4e0;
@@ -445,13 +444,16 @@ ul {
 }
 
 .text-box {
-    width: 400px;
+    width: 90%; 
+    max-width: 400px;
     position: absolute;
-    top: 150px;
-    right: 150px;
+    top: 20%;
+    right: 5%;
     text-align: left;
-
+    color: #000;
+    z-index: 2;
 }
+
 
 /* Article*/
 
@@ -749,18 +751,23 @@ ul {
   border-right: 2px solid black; /* Simulasi kursor */
   width: 0;                      /* Mulai dari lebar 0 */
   animation: 
-    typing 2s steps(20, end) forwards, 
-    blinkCaret 0.75s step-end infinite;
+  typing 2s steps(20, end) forwards, 
+  blinkCaret 0.75s step-end infinite;
 }
 
   .text-box h6 {
     display: none;
   }
 
-  .text-box {
-    width: 150px;
-    padding: 0px 5px;
-  }
+   .carousel-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carousel-left, .carousel-right {
+        margin-top: 20px;
+        text-align: center;
+    }
 
   .adopt-btn {
     display: inline-block;
